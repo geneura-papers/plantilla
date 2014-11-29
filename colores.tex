@@ -6,7 +6,8 @@
 \usepackage{todonotes}
 
 
-\newcommand{\notajj}[1]{\todo[linecolor=green,backgroundcolor=green!90!white,bordercolor=purple]{#1}}
+\newcommand{\notajj}[1]{\todo[size=\small,linecolor=green,backgroundcolor=green!90!white,bordercolor=purple]{#1}}
+\newcommand{\notapedro}[1]{\todo[size=\small,linecolor=blue,backgroundcolor=blue!20!white,bordercolor=blue]{#1}}
 
 \begin{document}
 
@@ -16,14 +17,17 @@
 
 \maketitle
 
+% esta directiva es la que incluye justo antes del abstract la lista 
+% de comentarios que se hayan incluido en el resto del paper
 \listoftodos
+
 
 \begin{abstract}
  Vamos a elegir cada uno un color para trabajar con {\tt todonotes}
 para hacer nuestras anotaciones. \notajj{Ir añadiendo aquí las notas propias}
  Hay que instalarlo de
 \url{http://ctan.org/pkg/todonotes} y luego añadir una anotación aquí
-o donde sea que indique el color que vamos a elegir. En el manual (y
+o donde sea que indique el color que vamos a elegir. En el manual (y     \notapedro{¡Vamos a probarlo!}
 ahí más arriba en el fuente) explica cómo hacer una macro para cada
 uno. 
 \end{abstract}
