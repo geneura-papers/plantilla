@@ -1,16 +1,15 @@
 \documentclass[a4paper]{article}
-
 \usepackage[latin1]{inputenc}
 \usepackage{color}
 \usepackage{url}
 \usepackage{todonotes}
 
 
-\newcommand{\notajj}[1]{\todo[size=\small,linecolor=green,backgroundcolor=green!90!white,bordercolor=purple]{#1}}
-\newcommand{\notapedro}[1]{\todo[size=\small,linecolor=blue,backgroundcolor=blue!20!white,bordercolor=blue]{#1}}
+\newcommand{\notajj}[1]{\todo[size=\small,linecolor=green,backgroundcolor=green!90!white,bordercolor=purple]{#1  \\ -- \footnotesize \color{purple} JJ}}
+\newcommand{\notapedro}[1]{\todo[size=\small,linecolor=blue,backgroundcolor=blue!20!white,bordercolor=blue]{#1  \\ -- \footnotesize \color{blue} Pedro}}
 % -| Vrivas - 30-Nov-2014 |-----------------------------------------------------------
-\definecolor{colorvrivas}{rgb}{0.9,0.4,0.4}
-\newcommand{\notavrivas}[1]{\todo[size=\small,linecolor=colorvrivas,backgroundcolor=colorvrivas!20!white,bordercolor=colorvrivas]{#1}}
+\definecolor{cvrivas}{rgb}{0.9,0.4,0.4}
+\newcommand{\notavrivas}[1]{\todo[size=\small,linecolor=cvrivas,backgroundcolor=cvrivas!20!white,bordercolor=white]{#1 \\ -- \footnotesize \color{cvrivas} Victor}}
 % ------------------------------------------------------------------------------------
 \begin{document}
 
@@ -26,21 +25,21 @@
 
 
 \begin{abstract}
- Vamos a elegir cada uno un color para trabajar con {\tt todonotes} \notavrivas{Colorin, colorado, esta nota se ha acabado}
-para hacer nuestras anotaciones. \notajj{Ir a√±adiendo aqu√≠ las notas propias}
+ Vamos a elegir cada uno un color para trabajar con {\tt todonotes} \notavrivas{Colorin, colorado, esta nota se ha acabado.}
+para hacer nuestras anotaciones. 
  Hay que instalarlo de
-\url{http://ctan.org/pkg/todonotes} y luego a√±adir una anotaci√≥n aqu√≠
-o donde sea que indique el color que vamos a elegir. En el manual (y     \notapedro{¬°Vamos a probarlo!}
-ah√≠ m√°s arriba en el fuente) explica c√≥mo hacer una macro para cada
-uno. 
+\url{http://ctan.org/pkg/todonotes} y luego aÒadir una anotaciÛn aquÌ
+o donde sea que indique el color que vamos a elegir. En el manual (y     \notapedro{°Vamos a probarlo!}
+ahÌ m·s arriba en el fuente) explica cÛmo hacer una macro para cada
+uno.
 \end{abstract}
 
 \section{Acknowledgements}
 
 This work has been supported in part by
 FPU research grant AP2009-2942 and projects SIPESCA (under Programa
-Operativo FEDER de Andaluc√≠a 2007-2013) and TIN2011-28627-C04-02
-awarded by the Spanish Ministry of Economy and Competitivity.\notajj{Aprovechamos y metemos aqu√≠ los proyectos a los que haya que
+Operativo FEDER de AndalucÌa 2007-2013) and TIN2011-28627-C04-02
+awarded by the Spanish Ministry of Economy and Competitivity.\notajj{Aprovechamos y metemos aquÌ los proyectos a los que haya que
   agradecerles en cada momento}
 
 \end{document}
