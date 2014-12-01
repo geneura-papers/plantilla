@@ -3,7 +3,7 @@
 \usepackage{color}
 \usepackage{url}
 \usepackage{todonotes}
-
+\usepackage{soul}
 
 \newcommand{\notajj}[1]{\todo[size=\small,linecolor=green,backgroundcolor=green!90!white,bordercolor=purple]{#1  \\ -- \footnotesize \color{purple} JJ}}
 \newcommand{\notapedro}[1]{\todo[size=\small,linecolor=blue,backgroundcolor=blue!20!white,bordercolor=blue]{#1  \\ -- \footnotesize \color{blue} Pedro}}
@@ -16,10 +16,13 @@
 \definecolor{cpaloma}{RGB}{152,251,152}
 \definecolor{cbpaloma}{RGB}{0,100,0}
 \newcommand{\notapaloma}[1]{\todo[size=\small,linecolor=cbpaloma,backgroundcolor=cpaloma!20!white,bordercolor=cbpaloma]{#1 \\ -- \footnotesize \color{cbpaloma} Paloma}}
+\newcommand{\notagus}[1]{\todo[size=\small,backgroundcolor=yellow!33,bordercolor=yellow,linecolor=yellow]{#1  \\ \footnotesize -- Gustavo}}
+\newcommand{\notag}[2]{\hl{#1}\todo{#2}}
+
 % ------------------------------------------------------------------------------------
 \begin{document}
 
-\title{Eligiendo nuestros colores para todonotes}
+\title{Eligiendo nuestros colores para \notag{todonotes}{En Fedora el paquete se llama texlive-todonotes... ¿No queda más bonito asín? Inconveniente: añadir soul}}
 
 \author{Geneura at large}
 
@@ -38,6 +41,7 @@ para hacer nuestras anotaciones.
 o donde sea que indique el color que vamos a elegir. En el manual (y     \notapedro{¡Vamos a probarlo!}
 ahí más arriba en el fuente) explica cómo hacer una macro para cada   \notafergu{Nota hecha por un daltónico}
 uno.
+En un lugar de la Mancha\notagus{¿Seguro que era la Mancha?}...
 \end{abstract}
 
 \section{Acknowledgements}
