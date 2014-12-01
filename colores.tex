@@ -13,6 +13,9 @@
 \newcommand{\notavrivas}[1]{\todo[size=\small,linecolor=cvrivas,backgroundcolor=cvrivas!20!white,bordercolor=white]{#1 \\ -- \footnotesize \color{cvrivas} Victor}}
 \definecolor{cfergu}{rgb}{0.2,0.5,0.9}
 \newcommand{\notafergu}[1]{\todo[size=\small,linecolor=cfergu,backgroundcolor=cfergu!20!white,bordercolor=black]{#1 \\ -- \footnotesize \color{cfergu} Fergu}}
+\definecolor{cpaloma}{RGB}{152,251,152}
+\definecolor{cbpaloma}{RGB}{0,100,0}
+\newcommand{\notapaloma}[1]{\todo[size=\small,linecolor=cbpaloma,backgroundcolor=cpaloma!20!white,bordercolor=cbpaloma]{#1 \\ -- \footnotesize \color{cbpaloma} Paloma}}
 % ------------------------------------------------------------------------------------
 \begin{document}
 
@@ -31,7 +34,7 @@
  Vamos a elegir cada uno un color para trabajar con {\tt todonotes} \notavrivas{Colorin, colorado, esta nota se ha acabado.}
 para hacer nuestras anotaciones. 
  Hay que instalarlo de
-\url{http://ctan.org/pkg/todonotes} y luego añadir una anotación aquí
+\url{http://ctan.org/pkg/todonotes} y luego añadir una anotación aquí \notapaloma{¿Aquí? Pues aquí la añado.}
 o donde sea que indique el color que vamos a elegir. En el manual (y     \notapedro{¡Vamos a probarlo!}
 ahí más arriba en el fuente) explica cómo hacer una macro para cada   \notafergu{Nota hecha por un daltónico}
 uno.
