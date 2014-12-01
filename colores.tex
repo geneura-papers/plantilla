@@ -20,12 +20,17 @@
 \newcommand{\notagus}[1]{\todo[size=\small,backgroundcolor=yellow!33,bordercolor=yellow,linecolor=yellow]{#1  \\ \footnotesize -- Gustavo}}
 \newcommand{\notag}[2]{\hl{#1}\todo{#2}}
 
+\definecolor{ctares}{rgb}{0.1,0.1,0.1}
+\newcommand{\notantares}[1]{\todo[fancyline,size=\small,linecolor=gray,backgroundcolor=gray!30!white,bordercolor=black]{#1 \\ -- \footnotesize \color{orange} Antares}}
+
+
+
 % ------------------------------------------------------------------------------------
 \begin{document}
 
 \title{Eligiendo nuestros colores para \notag{todonotes}{En Fedora el paquete se llama texlive-todonotes... ¿No queda más bonito asín? Inconveniente: añadir soul}}
 
-\author{Geneura at large}
+\author{Geneura at large}	
 
 \maketitle
 
@@ -36,7 +41,7 @@
 
 \begin{abstract}
  Vamos a elegir cada uno un color para trabajar con {\tt todonotes} \notavrivas{Colorin, colorado, esta nota se ha acabado.}
-para hacer nuestras anotaciones. 
+para hacer nuestras anotaciones. \notantares{Verás que risa luego al imprimir esto...}
  Hay que instalarlo de
 \url{http://ctan.org/pkg/todonotes} y luego añadir una anotación aquí \notapaloma{¿Aquí? Pues aquí la añado.}
 o donde sea que indique el color que vamos a elegir. En el manual (y     \notapedro{¡Vamos a probarlo!}
