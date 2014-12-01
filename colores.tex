@@ -8,7 +8,7 @@
 \newcommand{\notajj}[1]{\todo[size=\small,linecolor=green,backgroundcolor=green!90!white,bordercolor=purple]{#1  \\ -- \footnotesize \color{purple} JJ}}
 \newcommand{\notapedro}[1]{\todo[size=\small,linecolor=blue,backgroundcolor=blue!20!white,bordercolor=blue]{#1  \\ -- \footnotesize \color{blue} Pedro}}
 \newcommand{\notaantonio}[1]{\todo[size=\small,linecolor=red,backgroundcolor=orange!20!white,bordercolor=red]{#1  \\ -- \footnotesize \color{orange} Antonio}}
-\newcommand{\notamaribel}[1]{\todo[size=\small,linecolor=yelow,backgroundcolor=black!20!white,bordercolor=black]{#1  \\ -- \footnotesize \color{yelow} Maribel}}
+\newcommand{\notamaribel}[1]{\todo[size=\small,linecolor=red,backgroundcolor=orange!20!white,bordercolor=red]{#1  \\ -- \footnotesize \color{red} Maribel}}
 % -| Vrivas - 30-Nov-2014 |-----------------------------------------------------------
 \definecolor{cvrivas}{rgb}{0.9,0.4,0.4}
 \newcommand{\notavrivas}[1]{\todo[size=\small,linecolor=cvrivas,backgroundcolor=cvrivas!20!white,bordercolor=white]{#1 \\ -- \footnotesize \color{cvrivas} Victor}}
@@ -35,24 +35,33 @@
 
 
 \begin{abstract}
- Vamos a elegir cada uno un color para trabajar con {\tt todonotes} \notavrivas{Colorin, colorado, esta nota se ha acabado.}
-para hacer nuestras anotaciones. 
+ Vamos a elegir cada uno un color para trabajar con {\tt todonotes} \notavrivas{Colorin, colorado, esta nota se ha acabado.} \notamaribel{A mí me salen las notas de todos dobles.} para hacer nuestras anotaciones. 
  Hay que instalarlo de
 \url{http://ctan.org/pkg/todonotes} y luego añadir una anotación aquí \notapaloma{¿Aquí? Pues aquí la añado.}
 o donde sea que indique el color que vamos a elegir. En el manual (y     \notapedro{¡Vamos a probarlo!}
 ahí más arriba en el fuente) explica cómo hacer una macro para cada   \notafergu{Nota hecha por un daltónico}
 uno.
 En un lugar de la Mancha\notagus{¿Seguro que era la Mancha?}...
+
 \end{abstract}
 
 \section{Acknowledgements}\notajj{Aprovechamos y metemos aquí los proyectos a los que haya que
   agradecerles en cada momento}
 
-This work has been supported in part by %uno por línea
-projects SIPESCA (under Programa Operativo FEDER de Andalucía 2007-2013),
-TIN2011-28627-C04-02 awarded by the Spanish Ministry of Economy and Competitivity,
-SPIP2014-01437 (Proyecto PETRA, funded by Dirección General de Tráfico),
-PRY142/14 (funded by Fundación Pública Andaluza, Centro de Estudios Andaluces en la IX Convocatoria de Proyectos de Investigación)
-and
-PYR-2014-17 GENIL project, awarded by CEI-BIOTIC Granada. \notaantonio{Borrad los antiguos y poned el mío, hombre ya! :D}
+Yo creo que mejor ponerlos en una lista, cada uno con su frase:
+
+This work has been supported in part by:
+\begin{itemize}
+\item SIPESCA under Programa Operativo FEDER de Andalucía 2007-2013
+\item TIN2011-28627-C04-02 awarded by the Spanish Ministry of Economy and Competitivity
+\item SPIP2014-01437 (Proyecto PETRA, funded by Dirección General de Tráfico)
+\item Este proyecto con nº de referencia: PRY142/14 ha sido financiado íntegramente por la Fundación Pública Andaluza Centro de Estudios Andaluces en la IX Convocatoria de Proyectos de Investigación. \notamaribel{Este proyecto tiene que ponerse esta frase tal y como está, en espaniol, por exigencias del contrato.}
+\item PYR-2014-17 GENIL project, awarded by CEI-BIOTIC Granada. \notaantonio{Borrad los antiguos y poned el mío, hombre ya! :D}
+\end{itemize} 
+
+
+
+A mí las notas me destrozan el texto, sale todo descuadrado.
+
+
 \end{document}
