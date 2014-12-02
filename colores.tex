@@ -9,28 +9,31 @@
 \newcommand{\notapedro}[1]{\todo[size=\small,linecolor=blue,backgroundcolor=blue!20!white,bordercolor=blue]{#1  \\ -- \footnotesize \color{blue} Pedro}}
 \newcommand{\notaantonio}[1]{\todo[size=\small,linecolor=red,backgroundcolor=orange!20!white,bordercolor=red]{#1  \\ -- \footnotesize \color{orange} Antonio}}
 \newcommand{\notamaribel}[1]{\todo[size=\small,linecolor=red,backgroundcolor=orange!20!white,bordercolor=red]{#1  \\ -- \footnotesize \color{red} Maribel}}
-% -| Vrivas - 30-Nov-2014 |-----------------------------------------------------------
+
 \definecolor{cvrivas}{rgb}{0.9,0.4,0.4}
 \newcommand{\notavrivas}[1]{\todo[size=\small,linecolor=cvrivas,backgroundcolor=cvrivas!20!white,bordercolor=white]{#1 \\ -- \footnotesize \color{cvrivas} Victor}}
+
 \definecolor{cfergu}{rgb}{0.2,0.5,0.9}
 \newcommand{\notafergu}[1]{\todo[size=\small,linecolor=cfergu,backgroundcolor=cfergu!20!white,bordercolor=black]{#1 \\ -- \footnotesize \color{cfergu} Fergu}}
+
 \definecolor{cpaloma}{RGB}{152,251,152}
 \definecolor{cbpaloma}{RGB}{0,100,0}
 \newcommand{\notapaloma}[1]{\todo[size=\small,linecolor=cbpaloma,backgroundcolor=cpaloma!20!white,bordercolor=cbpaloma]{#1 \\ -- \footnotesize \color{cbpaloma} Paloma}}
-\newcommand{\notagus}[1]{\todo[size=\small,backgroundcolor=yellow!33,bordercolor=yellow,linecolor=yellow]{#1  \\ \footnotesize -- Gustavo}}
-\newcommand{\notag}[2]{\hl{#1}\todo{#2}}
+
+\definecolor{cgus}{RGB}{239,255,18}
+\newcommand{\notagus}[1]{\todo[size=\small,backgroundcolor=cgus,bordercolor=cgus,linecolor=cgus]{#1 \\ -- \footnotesize Gustavo}}
+\newcommand{\notag}[2]{\sethlcolor{cgus} \hl{#1} \todo[color=cgus]{#2}}
 
 \definecolor{ctares}{rgb}{0.1,0.1,0.1}
 \newcommand{\notantares}[1]{\todo[fancyline,size=\small,linecolor=gray,backgroundcolor=gray!30!white,bordercolor=black]{#1 \\ -- \footnotesize \color{orange} Antares}}
 
+%------------------------------------------------------------------------------
 
-
-% ------------------------------------------------------------------------------------
 \begin{document}
 
 \title{Eligiendo nuestros colores para \notag{todonotes}{En Fedora el paquete se llama texlive-todonotes... ¿No queda más bonito asín? Inconveniente: añadir soul}}
 
-\author{Geneura at large}	
+\author{Geneura at large}
 
 \maketitle
 
@@ -38,16 +41,24 @@
 % de comentarios que se hayan incluido en el resto del paper
 \listoftodos
 
-
 \begin{abstract}
- Vamos a elegir cada uno un color para trabajar con {\tt todonotes} \notavrivas{Colorin, colorado, esta nota se ha acabado.}
-para hacer nuestras\notamaribel{A mí me salen las notas de todos dobles.} anotaciones. \notantares{Verás que risa luego al imprimir esto...}
+Vamos a elegir cada uno un color para trabajar con {\tt todonotes} \notavrivas{Colorin, colorado, esta nota se ha acabado.}
+para hacer nuestras {A mí me salen las notas de todos dobles.} anotaciones. \notantares{Verás que risa luego al imprimir esto...}
+ Hay que instalarlo de
+\url{http://ctan.org/pkg/todonotes} y luego añadir una anotación aquí {¿Aquí? Pues aquí la añado.}
+o donde sea que indique el color que vamos a elegir. En el manual (y     \notapedro{¡Vamos a probarlo!})
+ahí más arriba en el fuente) explica cómo hacer una macro para cada {Nota hecha por un daltónico}
+uno.
+En un lugar de la Mancha \notagus{¿Seguro que era la Mancha?}
+
+Vamos a elegir cada uno un color para trabajar con {\tt todonotes} {Colorin, colorado, esta nota se ha acabado.}
+para hacer nuestras\notamaribel{A mí me salen las notas de todos dobles.} anotaciones. {Verás que risa luego al imprimir esto...}
  Hay que instalarlo de
 \url{http://ctan.org/pkg/todonotes} y luego añadir una anotación aquí \notapaloma{¿Aquí? Pues aquí la añado.}
-o donde sea que indique el color que vamos a elegir. En el manual (y     \notapedro{¡Vamos a probarlo!}
+o donde sea que indique el color que vamos a elegir. En el manual (y {¡Vamos a probarlo!})
 ahí más arriba en el fuente) explica cómo hacer una macro para cada   \notafergu{Nota hecha por un daltónico}
 uno.
-En un lugar de la Mancha\notagus{¿Seguro que era la Mancha?}...
+En un lugar de la Mancha{¿Seguro que era la Mancha?}...
 
 \end{abstract}
 
